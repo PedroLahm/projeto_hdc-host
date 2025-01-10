@@ -244,8 +244,45 @@ article#planos div#bloco-planos section:nth-child(3) p, article#planos div#bloco
 article#busca-dominio{
     background-color: #33444C;
     width: 100%;
-    padding: 50px;
+    height: 500px;
+    padding: 75px 60px;
 
     text-align: center;
     color: white;
+}
+
+article#busca-dominio h2{
+    font-size: 2.7em;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+
+article#busca-dominio p{
+    font-size: 22px;
+}
+
+form{
+    margin-top: 40px;
+}
+
+form input[type="text"]{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #33444C;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form input::placeholder{
+    font-size: 18px;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    padding: 20px;
+    background-color: #2DC769;
+    border: 1px solid #2DC769;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
 }
