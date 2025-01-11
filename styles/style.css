@@ -120,7 +120,7 @@ main p{
 /*QUALIDADES*/
 article#qualidades{
     text-align: center;
-    margin: 80px 50px;
+    margin: 218px 50px;
     
     display: flex;
     flex-flow: row wrap;
@@ -152,12 +152,12 @@ article#qualidades section#suporte span.material-icons{
 
 article#qualidades h3{
     margin-bottom: 20px;
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 article#qualidades p{
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -172,12 +172,12 @@ article#planos h2, article#planos p{
 }
 
 article#planos h2{
-    font-size: 1.8em;
+    font-size: 2.7em;;
 }
 
 article#planos p{
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 article#planos div#bloco-planos{
@@ -263,8 +263,8 @@ article#planos div#bloco-planos section:nth-child(3) p, article#planos div#bloco
 article#busca-dominio{
     background-color: #33444C;
     width: 100%;
-    height: 600px;
-    padding: 125px 60px;
+    height: 700px;
+    padding: 215px 60px;
 
     text-align: center;
     color: white;
@@ -287,8 +287,8 @@ article#busca-dominio form{
 }
 
 article#busca-dominio form input[type="text"]{
-    width: 100%;
-    padding: 20px;
+    width: 90%;
+    padding: 15px;
     margin-bottom: 15px;
     
     border: 1px solid #33444C;
@@ -296,19 +296,19 @@ article#busca-dominio form input[type="text"]{
 }
 
 article#busca-dominio form input::placeholder{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 article#busca-dominio form input[type="submit"]{
-    width: 100%;
-    padding: 20px;
+    width: 200px;
+    padding: 12px;
     background-color: #2DC769;
     
     border: 1px solid #2DC769;
     border-radius: 5px;
     
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 article#busca-dominio form input[type="submit"]:hover{
@@ -324,12 +324,12 @@ article#contato{
 }
 
 article#contato h2{
-    font-size: 2em;
+    font-size: 2.7em;
     margin-bottom: 20px;
 }
 
 article#contato p{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
@@ -339,7 +339,7 @@ article#contato form{
 }
 
 article#contato input{
-    width: 350px;
+    width: 90%;
 }
 
 article#contato input{
@@ -355,10 +355,10 @@ article#contato input::placeholder{
 }
 
 article#contato textarea{
-    width: 348px;
+    width: 90%;
     height: 200px;
 
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     padding: 15px;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -366,6 +366,8 @@ article#contato textarea{
 }
 
 article#contato form input[type="submit"]{
+    width: 200px;
+    
     background-color: #2DC769;
     border: 1px solid #2DC769;
 
@@ -385,5 +387,5 @@ article#contato form input[type="submit"]:hover{
 footer{
     text-align: center;
     font-size: 18px;
-    padding: 20px;
+    padding: 10px;
 }

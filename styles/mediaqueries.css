@@ -1,7 +1,125 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 627px){
-    body{
-        background-color: yellow;
+@media print {
+
+    /* Remove margens e paddings desnecessários */
+    * {
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        background: none !important;
+    }
+
+    /* Ajustar cores para impressão em preto e branco */
+    body {
+        color: black;
+        font-size: 12px;
+        /* Ajuste se necessário */
+        line-height: 1.5;
+    }
+
+    /* Ocultar elementos irrelevantes para impressão */
+    nav,
+    article#busca-dominio,
+    footer {
+        display: none;
+    }
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    div#titulo {
+        background: none; /* Remove a imagem de fundo */
+        padding: 20px 0;  /* Ajusta o padding para evitar espaços vazios */
+        box-shadow: none; /* Remove sombras se houver */
+        text-align: center; /* Centraliza o texto */
+        margin: 0;
+    }
+
+    div#titulo + *{
+        margin: 0;
+    }
+
+    div#titulo h1 {
+        font-size: 24px; /* Ajuste o tamanho para impressão */
+        color: black;
+        text-shadow: none;
+        margin: 0;
+    }
+
+    div#titulo p {
+        font-size: 14px; /* Ajuste o tamanho para impressão */
+        color: black;
+        text-shadow: none;  
+    }
+
+    /* Ajustar alinhamento de textos e margens */
+    main {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        color: black !important;
+    }
+
+    ul {
+        list-style: square;
+        /* Facilita a leitura na impressão */
+    }
+
+    /* Exibir somente informações úteis */
+    article#qualidades,
+    article#planos,
+    article#contato {
+        margin: 20px auto;
+    }
+
+    /* Específico para planos */
+    article#planos div#bloco-planos section {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    article#planos div#bloco-planos section a {
+        display: none;
+        /* Links não são úteis no papel */
+    }
+}
+
+@media screen and (min-width: 859px) {
+
+    /*BUSCAR DOMÍNIO*/
+    article#busca-dominio form input[type="text"] {
+        width: 70%;
+    }
+
+    article#busca-dominio form input[type="submit"] {
+        width: 200px;
+    }
+
+    /*CONTATO*/
+    article#contato form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article#contato input,
+    article#contato textarea {
+        width: 70%;
     }
 }
